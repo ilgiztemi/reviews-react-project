@@ -1,38 +1,101 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 600px;
+  height: 800px;
+  margin: 40px auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container .header {
+  font-size: 42px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container .border {
+  border-bottom: 5px solid lightblue;
+  padding-bottom: 10px;
+  width: 15%;
+  margin: 5px auto 80px auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container .main {
+  width: 100%;
+  background-color: rgb(222, 220, 217);
+  padding: 30px 10px;
+  height: 470px;
+  border-radius: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+.container .main .top {
+  position: relative;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .main .top .fa-quote-right {
+  position: absolute;
+  top: 5%;
+  font-size: 25px;
+  color: aliceblue;
+  background-color: rgb(153, 204, 243);
+  padding: 10px;
+  border-radius: 50%;
+}
+.container .main #img {
+  max-width: 100%;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  box-shadow: 10px 5px 10px 5px;
+  border: 1px solid rgb(179, 221, 240);
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.container .main #fullName {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.container .main #specialty {
+  color: rgb(76, 76, 242);
+  margin-bottom: 10px;
+}
+.container .main #text {
+  line-height: 25px;
+  margin: 0 auto;
+  width: 95%;
+  height: 90px;
+}
+.container .main .fa-angle-left, .fa-angle-right {
+  width: 50%;
+  color: lightskyblue;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.container .main .fa-angle-left {
+  text-align: right;
+  padding-right: 10px;
+}
+.container .main .fa-angle-left:hover {
+  color: rgb(23, 157, 241);
+}
+.container .main .fa-angle-right {
+  text-align: left;
+  padding-left: 10px;
+}
+.container .main .fa-angle-right:hover {
+  color: rgb(23, 157, 241);
+}
+.container .main #btn {
+  padding: 6px;
+  border-radius: 5px;
+  border: 2px solid lightskyblue;
+  background-color: lightblue;
+  color: rgb(28, 160, 243);
+}
+.container .main #btn:hover {
+  background-color: rgb(96, 185, 241);
+  color: rgb(44, 42, 42);
 }
